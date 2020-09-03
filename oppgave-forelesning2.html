@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Oppgaver forelesning 2</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="stil.css" />
+</head>
+
+<body>
+
+    <script src="script.js"></script>
+
+    <header>
+
+        <h1 class="skole">HIOF</h1>
+
+        <h1 class="navn">Ole Syverinsen</h1>
+
+    </header>
+
+    <main> <!-- Hovedinnholdet på siden -->
+
+        <button id="todoKnapp">+ Todo</button>
+
+        <div id="myModal" class="modal"> <!-- Modal -->
+
+            <div class="modal-content">
+
+            <span class="close">&times;</span>
+
+                <h2>New todo</h2>
+
+                <div class="modalFelt">
+
+                    <p>Title<p>
+                    <input type="text" id="title" name="title"><br><br>
+
+                    <p>Description</p>
+                    <input type="text" id="description" name="description"><br><br>
+
+                    <p>Author</p>
+                    <input type="text" id="author" name="author"><br><br>
+
+                    <button onclick="myFunction()" class="create">Create</button>
+
+                </div>
+
+            </div>
+        
+        </div>
+
+        <section id="alleKort" class="alleKort"> <!-- Alle artikklene på hovedsiden -->
+
+        </section>
+
+        <h2 class="tableHeader">Completed todos</h2>
+
+        <div class="checkBox">
+            <input type="checkbox" id="filterDate" name="filterDate" value="Date">
+            <label for="filterDate"> Filter by date</label>
+        </div>
+
+        <table id="tabell">
+
+            <tr class="tableTop">
+                <th>Title</th>
+                <th>Author</th>
+                <th>Description</th>
+                <th>Completed</th>
+            </tr>
+
+            <tr class="tableInnhold">
+                <td>Todotitle</td>
+                <td>Author Author</td>
+                <td>I'm baby sriracha hot chicken ...</td>
+                <td>22.12.20</td>
+            </tr>
+
+            <tr class="tableInnhold">
+                <td>Todotitle</td>
+                <td>Author Author</td>
+                <td>I'm baby sriracha hot chicken ...</td>
+                <td>22.11.20</td>
+            </tr>
+
+            <tr class="tableInnhold"> 
+                <td>Todotitle</td>
+                <td>Author Author</td>
+                <td>I'm baby sriracha hot chicken ...</td>
+                <td>22.10.20</td>
+            </tr>
+
+        </table>
+
+    </main>
+
+</body>
+</html>

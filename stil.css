@@ -1,0 +1,337 @@
+body {
+
+    top: 0px;
+    left: 0px;
+    width: 95%;
+    height: 768px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin: 0 auto;
+
+}
+
+/*Header innhold*/
+
+header {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 63px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 10px #00000019;
+    opacity: 1;
+
+}
+
+.skole {
+
+    top: 19px;
+    left: 30px;
+    width: 200px;
+    height: 27px;
+    
+    text-align: left;
+    font: normal normal 900 20px/27px Avenir Next;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+    padding-left: 50px;
+
+}
+
+.navn {
+
+    top: 19px;
+    left: 1250px;
+    width: 200px;
+    height: 27px;
+
+    text-align: left;
+    font: normal normal 900 20px/27px Avenir Next;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+
+}
+
+/*Hovedinnhold*/
+
+main {
+
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 90px;
+
+}
+
+#todoKnapp {
+
+    top: 140px;
+    left: 221px;
+    width: 183px;
+    height: 51px;
+    border: 2px solid #333333;
+    opacity: 1;
+
+    font: normal normal 900 23px/32px Avenir Next;
+    letter-spacing: 0px;
+    color: #2D2F39;
+
+}
+
+#todoKnapp:hover {
+
+    background-color: #56D4C2;
+
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.modal-content input {
+
+    border: 1px solid #B6B6B6;
+    border-radius: 5px;
+    width: 80%;
+    height: 40px;
+    
+
+}
+
+.create {
+
+    background-color: #56D4C2;
+    color: white;
+    width: 100%;
+    height: 40px;
+
+}
+
+.modalFelt {
+
+    
+    margin: 0 auto;
+    text-align: left;
+
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.alleKort {
+
+    padding-top: 90px;
+    display: grid;
+    grid-template-columns: repeat( 3, minmax(282px, 1fr));
+    margin: 0 auto;
+
+}
+
+.kort {
+
+    top: 261px;
+    left: 864px;
+    width: 282px;
+    height: 163px;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 8px 8px 16px #5DD3D829;
+    border-radius: 8px;
+    opacity: 1;
+
+}
+
+.kortInnhold {
+    
+    padding: 20px 0;
+
+}
+
+.kort h3 {
+
+    width: 80%;
+    margin: 0 auto;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+}
+
+.kortTekst {
+
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+
+}
+
+.knapper {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+
+}
+
+.complete {
+
+    margin-left: 10px;
+    width: 77px;
+    height: 23px;
+    background: #56D4C2 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+
+    text-align: center;
+    font: normal normal bold 11px/15px Avenir Next;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+
+    line-height: 2;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.complete:hover {
+
+    background-color: rgba(86, 212, 194, 0.5);
+
+}
+
+.delete {
+   
+    width: 77px;
+    height: 23px;
+    background: #EF3340 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+
+    text-align: center;
+    font: normal normal bold 11px/15px Avenir Next;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+
+    line-height: 2;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.delete:hover {
+
+    background-color: rgba(239, 51, 64, 0.5);
+
+}
+
+/*Tabell*/
+
+.tableHeader {
+
+    margin-top: 60px;
+    text-align: left;
+    font: normal normal bold 16px/22px Avenir Next;
+    letter-spacing: 0px;
+    color: rgba(51, 51, 51, 1);
+    opacity: 1;
+
+}
+
+.checkBox {
+
+    float: right;
+    margin-right: 80px;
+    margin-bottom: 10px;
+
+}
+
+label {
+
+    text-align: left;
+    font: normal normal medium 14px/19px Avenir Next;
+    letter-spacing: 0px;
+    color: rgba(144, 144, 144, 1);
+    opacity: 1;    
+
+}
+
+table {
+
+    width: 100%;
+    margin-top: 30px;
+
+}
+
+table, th, td {
+
+    border-collapse: collapse;
+
+}
+
+th, td {
+
+    padding: 15px;
+
+}
+
+.tableTop {
+
+    text-align: left;
+    width: 926px;
+    height: 31px;
+    background: rgba(230, 230, 230, 1) 0% 0% no-repeat padding-box;
+    opacity: 1;
+
+}
+
+.tableInnhold {
+
+    text-align: left;
+    font: normal normal normal 14px/19px Avenir Next;
+    letter-spacing: 0px;
+    color: rgba(139, 139, 139, 1);
+    opacity: 1;
+    border-bottom: 2px solid rgba(129, 142, 148, 0.1);
+
+}
